@@ -85,25 +85,6 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.OpenApi/9.0.7": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "1.6.17"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -1003,7 +984,7 @@
           }
         }
       },
-      "Microsoft.OpenApi/1.6.17": {
+      "Microsoft.OpenApi/1.6.14": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -1771,22 +1752,6 @@
         "lib/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
         "microsoft.aspnetcore.authentication.jwtbearer.9.0.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.OpenApi/9.0.7": {
-      "sha512": "8aG0mkgmA38IDJ0ca5HIpdexKjHXIh0z1kIdw5WyM6CrD4+CEt97UgSwBBBCHG6QQKV0hj2mfkwtEcqrJBcu8g==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.openapi/9.0.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
-        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.9.0.7.nupkg.sha512",
-        "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -3772,10 +3737,10 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.OpenApi/1.6.17": {
-      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+    "Microsoft.OpenApi/1.6.14": {
+      "sha512": "tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
       "type": "package",
-      "path": "microsoft.openapi/1.6.17",
+      "path": "microsoft.openapi/1.6.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3783,7 +3748,7 @@
         "lib/netstandard2.0/Microsoft.OpenApi.dll",
         "lib/netstandard2.0/Microsoft.OpenApi.pdb",
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.1.6.14.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
     },
@@ -4691,7 +4656,6 @@
     "net9.0": [
       "MassTransit.RabbitMQ >= 8.3.6",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.0",
-      "Microsoft.AspNetCore.OpenApi >= 9.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.0",
       "Serilog.AspNetCore >= 9.0.0",
@@ -4706,9 +4670,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ixtli\\OneDrive\\Documentos\\Cursos\\Pos-Graduacao FIAP\\Arquitetura e Desenvolvimento .NET\\Projeto - Etapa 2\\FCG - Fase 02\\fcg-users-api\\FCG.UsersAPI\\fcg-users-api.csproj",
-      "projectName": "fcg-users-api",
-      "projectPath": "C:\\Users\\Ixtli\\OneDrive\\Documentos\\Cursos\\Pos-Graduacao FIAP\\Arquitetura e Desenvolvimento .NET\\Projeto - Etapa 2\\FCG - Fase 02\\fcg-users-api\\FCG.UsersAPI\\fcg-users-api.csproj",
+      "projectUniqueName": "C:\\Users\\Ixtli\\OneDrive\\Documentos\\Cursos\\Pos-Graduacao FIAP\\Arquitetura e Desenvolvimento .NET\\Projeto - Etapa 2\\FCG - Fase 02\\fcg-users-api\\FCG.UsersAPI\\FCG.UsersAPI.csproj",
+      "projectName": "FCG.UsersAPI",
+      "projectPath": "C:\\Users\\Ixtli\\OneDrive\\Documentos\\Cursos\\Pos-Graduacao FIAP\\Arquitetura e Desenvolvimento .NET\\Projeto - Etapa 2\\FCG - Fase 02\\fcg-users-api\\FCG.UsersAPI\\FCG.UsersAPI.csproj",
       "packagesPath": "C:\\Users\\Ixtli\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ixtli\\OneDrive\\Documentos\\Cursos\\Pos-Graduacao FIAP\\Arquitetura e Desenvolvimento .NET\\Projeto - Etapa 2\\FCG - Fase 02\\fcg-users-api\\FCG.UsersAPI\\obj\\",
       "projectStyle": "PackageReference",
@@ -4757,10 +4721,6 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[9.0.0, )"
-          },
-          "Microsoft.AspNetCore.OpenApi": {
-            "target": "Package",
-            "version": "[9.0.7, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
