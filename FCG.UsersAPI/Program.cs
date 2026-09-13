@@ -14,6 +14,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
 
 // ── Serilog ──────────────────────────────────────────────
 Log.Logger = new LoggerConfiguration()
@@ -101,6 +103,13 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(resource => resource.AddService("users-api"))
+    .WithMetrics(metrics => metrics
+        .AddAspNetCoreInstrumentation()
+        .AddPrometheusExporter());
+
+
 var app = builder.Build();
 
 // ── Migrations automáticas ───────────────────────────────
@@ -122,5 +131,6 @@ app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+app.MapPrometheusScrapingEndpoint();
 app.MapControllers();
 app.Run();
